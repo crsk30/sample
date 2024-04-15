@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title My Jade Page
+  body
+    h1 Hello, World!
+    p This is a paragraph.
+    button#myButton submit 
+script.
+      document.addEventListener('DOMContentLoaded', function() {
+        // Your JavaScript event listeners and logic here
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', function() {
+          console.log('Button clicked!');
+        });
+      });
